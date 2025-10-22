@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "WalletGlow",
+  "version": "1.0",
+  "description": "Highlights Ethereum wallet addresses with links on any webpage.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png"
+  }
+}
