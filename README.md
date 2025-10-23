@@ -27,7 +27,7 @@ npm install
 INFURA_API_KEY="<INSERT_API_KEY>"
 ```
 
-5. Build the project:
+4. Build the project:
 
 ```
 npm run build
