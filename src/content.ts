@@ -28,3 +28,8 @@ function highlightEthAddresses(node: Node): void {
 }
 
 document.body && highlightEthAddresses(document.body);
+
+// Set interval to run highlight every 3 seconds
+setInterval(() => {
+  document.body && highlightEthAddresses(document.body);
+}, 3000);
