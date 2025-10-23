@@ -22,13 +22,18 @@ git clone https://github.com/tomasgrusz/wallet-glow.git
 npm install
 ```
 
-3. Build the project:
+3. Create `.env` from `.env.example`, inputting your API keys.
+```dotenv
+INFURA_API_KEY="<INSERT_API_KEY>"
+```
+
+5. Build the project:
 
 ```
 npm run build
 ```
 
-4. Add extension to Chrome:
+5. Add extension to Chrome:
    > 1. Visit [Chrome Extensions](chrome://extensions/) in your browser.
    >
    > 2. Enable `Developer mode` in top left corner.
