@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+require('dotenv').config();
 
 module.exports = {
   mode: 'production',
@@ -18,5 +20,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      INFURA_API_KEY: JSON.stringify(process.env.INFURA_API_KEY)
+    })
+  ]
 };
