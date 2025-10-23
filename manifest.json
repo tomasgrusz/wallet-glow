@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "WalletGlow",
+  "name": "EtherGlow",
   "version": "1.0",
   "description": "Highlights Ethereum wallet addresses with links on any webpage.",
   "permissions": ["activeTab", "scripting"],
