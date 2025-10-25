@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build:chrome": "webpack --config-name chrome",
+    "build:firefox": "webpack --config-name firefox && web-ext build --source-dir=firefox --artifacts-dir=firefox"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "bestzip": "^2.2.1",
+    "copy-webpack-plugin": "^13.0.1",
     "dotenv": "^17.2.3",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
+    "web-ext": "^9.1.0",
     "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
